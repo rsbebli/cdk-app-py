@@ -22,13 +22,6 @@ jobs:
           sudo rm -f /usr/local/bin/aws
           sudo ln -s /usr/local/aws-cli/v2/current/bin/aws /usr/local/bin/aws
 
-      - name: Install Python    
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.9'
-          cache: 'pip' # caching pip dependencies
-          #run: pip install -r requirements.txt
-
       - name: Install CDK
         run: npm install -g aws-cdk
 
