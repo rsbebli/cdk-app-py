@@ -14,8 +14,7 @@ on:
     branches : 
       - development  
   schedule :
-    - cron : '5 * * * * '  
-    
+    - cron : '5 * * * * '      
       branches : test
 
 jobs:
