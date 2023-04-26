@@ -13,6 +13,8 @@ on:
   push :
     branches : 
       - development  
+      - test
+      - main
   schedule :
     - cron : '5 * * * * '      
       branches : test
