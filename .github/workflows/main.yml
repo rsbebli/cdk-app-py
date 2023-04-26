@@ -12,7 +12,12 @@ on:
       - main
   push :
     branches : 
-      - development          
+      - development  
+  schedule :
+    - cron : '5 * * * * '  
+    
+      branches : test
+
 jobs:
   printInputs:
     runs-on: ubuntu-latest
